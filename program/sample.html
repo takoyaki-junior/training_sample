@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ja" >
+  <head>
+    <title>株式会社SCREEN  研修サンプル</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+  </head>
+  <nav class="navbar bg-light fixed-top border">
+      <span class="navbar-brand mb-0 h1">　株式会社SCREEN　サンプルアプリケーション</span>
+  </nav><br><br><br><br><br>
+  <body  class="text-center" >
+	<div class="container">
+        <div class="card mx-auto" style="width:22rem;" >
+        <form class="form-group" onsubmit="return login();" method="post">
+            <p>　</p>
+            <div><img src="./img/sample.png" class="rounded-circle" height="100"></div><br>
+            <div class="container">
+                <label for="userid" class="sr-only">ログインID</label>
+                <input type="text" id="userid" class="form-control" placeholder="ログインID" autofocus><br>
+                <label for="password" class="sr-only">パスワード</label>
+                <input type="password" id="password" class="form-control" placeholder="パスワード"><br>
+                <button class="btn btn-primary" type="submit" formaction="./sample2.html" >　ログイン　</button>
+            </div>
+            <p>　</p>
+        </form>
+        </div>
+	</div>
+	  <p class="mt-5 mb-3 text-muted">&copy; 2022 株式会社SCREEN</p>
+	<script type="text/javascript" src="./js/sample.js"></script>
+	<script type="text/javascript" src="./js/data.js"></script>
+  </body>
+</html>

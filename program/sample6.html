@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ja" >
+  <head>
+    <title>株式会社SCREEN  研修サンプル</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+  </head>
+  <nav class="navbar bg-light fixed-top border">
+      <span class="navbar-brand mb-0 h1">　株式会社SCREEN　サンプルアプリケーション</span>
+  </nav><br><br><br><br>
+  <body  class="text-center" >
+	<div class="container">
+        <div class="card mx-auto" style="width:40rem;" >
+        <form class="form-group" onsubmit="return userUpdate();">
+            <h3 class="h3 mb-3 ">研修生情報編集</h3>
+            <label>研修生ID</label>
+            <input type="text" id="userid" class="form-control" placeholder="研修生ID" required autofocus><br>
+            <label>姓</label>
+            <input type="text" id="lastname" class="form-control" placeholder="姓" required><br>
+            <label>名</label>
+            <input type="text" id="firstname" class="form-control" placeholder="名" required><br>
+            <button class="btn btn-primary" type="submit" formaction="./sample4.html" >　更新　</button>
+            <p>　</p>
+        </form>
+        </div>
+	</div>
+	  <p class="mt-5 mb-3 text-muted">&copy; 2022 株式会社SCREEN</p>
+	<script type="text/javascript" src="./js/sample6.js"></script>
+  </body>
+</html>
+

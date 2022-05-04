@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ja" >
+  <head>
+    <title>株式会社SCREEN  研修サンプル</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+  </head>
+  <nav class="navbar bg-light fixed-top border">
+      <span class="navbar-brand mb-0 h1">　株式会社SCREEN　サンプルアプリケーション</span>
+  </nav><br><br><br>
+  <body  class="text-center" >
+	<div class="container">
+    <br>
+    <form action="" method="POST" name="search">
+        <div class="form-group row">
+            <div class="col-2 ">
+                <input type="text" name="form-0-staff_id" placeholder="研修生ID" class="form-control" id="id_form-0-staff_id">
+            </div>
+            <div class="col-4">
+                <input type="text" name="form-0-last_name" placeholder="氏名(姓)" class="form-control" id="id_form-0-last_name">
+            </div>
+            <div class="col-4">
+                <input type="text" name="form-0-first_name" placeholder="氏名(名)" class="form-control" id="id_form-0-first_name">
+            </div>
+            <div class="col-2 text-center">
+                <button type="submit" class="btn btn-primary btn-md" name="search">　　検索　　</button>
+            </div>
+        </div>
+    </form>
+    </div><br><br>
+
+	<div class="container">
+        <table class="table table-bordered table-hover" id="usertable">
+                <tr>
+                    <th scope="col" id="num">#</th>
+                    <th scope="col" id="userid">研修生ID</th>
+                    <th scope="col" id="lastname">氏名(姓)</th>
+                    <th scope="col" id="firstname">氏名(名)</th>
+                    <th scope="col" id="detail">詳細</th >
+                </tr>
+        </table>
+    </div>
+	  <p class="mt-5 mb-3 text-muted">&copy; 2022 株式会社SCREEN</p>
+	<script type="text/javascript" src="./js/sample4.js"></script>
+  </body>
+</html>
+
