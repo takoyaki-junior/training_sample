@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <script defer src="./js/S0602-CheckShopping.js"></script>
+    <title>SCREEN 研修アプリケーション</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar bg-light fixed-top border">
+            <span class="navbar-brand mb-0 h1">研修アプリ 購入確認画面</span>
+        </nav>
+    </header>
+    <main>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="card mx-auto">
+                        <!-- 購入者情報表示エリア start -->
+                        <div class="card-body">
+                            <h5 class="text-center">購入者情報</h5>
+                            <p>&nbsp;</p>
+                            <span>お名前：</span>
+                            <span id="userName"></span>
+                            <p>&nbsp;</p>
+                            <span>お名前(カナ)：</span>
+                            <span id="userNameKn"></span>
+                            <p>&nbsp;</p>
+                            <span>メールアドレス：</span>
+                            <span id="userEmail"></span>
+                            <p>&nbsp;</p>
+                            <span>登録郵便番号：</span>
+                            <span id="userPostCode"></span>
+                            <p>&nbsp;</p>
+                            <span>登録住所：</span>
+                            <span id="userAddress"></span>
+                            <p>&nbsp;</p>
+                        </div>
+                        <!-- 購入者情報表示エリア end -->
+                    </div><br>
+                    <div class="card mx-auto">
+                        <!-- 発送先情報表示エリア start -->
+                        <div class="card-body">
+                            <h5 class="text-center">発送先情報</h5>
+                            <p>&nbsp;</p>
+                            <span>発送先お名前：</span>
+                            <span id="deliveryName"></span>
+                            <p>&nbsp;</p>
+                            <span>発送先お名前(カナ)：</span>
+                            <span id="deliveryNameKn"></span>
+                            <p>&nbsp;</p>
+                            <span>発送先郵便番号：</span>
+                            <span id="deliveryPostCode"></span>
+                            <p>&nbsp;</p>
+                            <span>発送先住所：</span>
+                            <span id="deliveryAddress"></span>
+                            <p>&nbsp;</p>
+                        </div>
+                        <!-- 発送先情報表示エリア end -->
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card mx-auto">
+                        <!-- 購入商品情報表示エリア start -->
+                        <div class="card-body">
+                            <h5 class="text-center">カート情報</h5>
+                            <p>&nbsp;</p>
+                            <table class="table table-bordered" id="cartTable">
+                                <tr>
+                                    <th scope="col" id="fruitsName">商品名</th>
+                                    <th scope="col" id="fruitsCount">注文数</th>
+                                    <th scope="col" id="price">価格</th>
+                                    <th scope="col" id="postage">送料</th>
+                                </tr>
+                            </table>
+                            <p>&nbsp;</p>
+                            <h5 id=></h5>
+                            <h5>
+                                <span>合計金額：</span>
+                                <span id="total"></span>
+                                <span>円</span>
+                            </h5>
+                            <div>
+                                <span>（商品合計：</span>
+                                <span id="fruitsTotal"></span>
+                                <span>円、</span>
+                                <span>送料合計：</span>
+                                <span id="postageTotal"></span>
+                                <span>円）</span>
+                            </div>
+                            <p>&nbsp;</p>
+                            <h5>
+                                <span>支払い方法：</span>
+                                <span id="selectPayment"></span>
+                                <span>現金払い</span>
+                            </h5>
+                            <p>&nbsp;</p>
+                            <div class="text-center">
+                                <button class="btn btn-primary" onclick="purchase()">　商品を購入　</button>
+                            </div>
+                            <p>&nbsp;</p>
+                        </div>
+                        <!-- 購入商品情報表示エリア end -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="text-center">
+        <p>&nbsp;</p>
+        <p class="mt-5 mb-3 text-muted">&copy; 2022 株式会社SCREEN</p>
+        <p>&nbsp;</p>
+    </footer>
+</body>
+</html>

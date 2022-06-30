@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <script defer src="./js/S0202-CheckAccount.js"></script>
+    <title>SCREEN 研修アプリケーション</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar bg-light fixed-top border">
+            <span class="navbar-brand mb-0 h1">&nbsp;研修アプリ アカウント登録情報確認&nbsp;</span>
+        </nav>
+    </header>
+    <main>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <div class="card mx-auto" style="width:30rem;">
+            <div class="card-body">
+                <p>&nbsp;</p>
+                <h3 class="h3 mb-3 text-center">入力情報確認</h3>
+                <p>&nbsp;</p>
+                <!-- 入力情報表示 start -->
+                <div class="container">
+                    <div>ユーザーID</div>
+                    <div id="userId"></div> <br>
+                    <div>パスワード</div>
+                    <div id="password"></div> <br>
+                    <div>メールアドレス</div>
+                    <div id="email"></div> <br>
+                    <div>姓</div>
+                    <div id="lastName"></div> <br>
+                    <div>名</div>
+                    <div id="firstName"></div> <br>
+                    <div>姓(カナ)</div>
+                    <div id="lastNameKn"></div> <br>
+                    <div>名(カナ)</div>
+                    <div id="firstNameKn"></div> <br>
+                    <div>郵便番号</div>
+                    <div id="postCode"></div> <br>
+                    <div>住所1(都道府県)</div>
+                    <div id="address1"></div> <br>
+                    <div>住所2(市区町村)</div>
+                    <div id="address2"></div> <br>
+                    <div>住所3(地名・番地)</div>
+                    <div id="address3"></div> <br>
+                    <div>住所4(マンション名)</div>
+                    <div id="address4"></div>
+                </div>
+                <!-- 入力情報表示 end -->
+                <p>&nbsp;</p>
+                <div class="text-center">
+                    <button class="btn btn-primary" onclick="createAccount()">　登録　</button>
+                </div>
+                <p>&nbsp;</p>
+            </div>
+        </div>
+    </main>
+    <footer class="text-center">
+        <p>&nbsp;</p>
+        <p class="mt-5 mb-3 text-muted">&copy; 2022 株式会社SCREEN</p>
+        <p>&nbsp;</p>
+    </footer>
+</body>
+</html>

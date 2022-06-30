@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <script defer src="./js/S0601-ShoppingCart.js"></script>
+    <title>SCREEN 研修アプリケーション</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar bg-light fixed-top border">
+            <span class="navbar-brand mb-0 h1">&nbsp;研修アプリ 買い物かご&nbsp;</span>
+        </nav>
+    </header>
+    <main>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <div class="card mx-auto" style="width:40rem;">
+            <div class="card-body">
+                <h4 class="text-center">買い物かご確認</h4>
+                <p>&nbsp;</p>
+                <!-- カート内金額表示エリア start -->
+                <div class="text-end">
+                    <h5>
+                        <span>買い物かご合計：</span>
+                        <span id="total"></span>
+                        <span>円</span>
+                    </h5>
+                    <div>
+                        <span>商品合計：</span>
+                        <span id="fruitsTotal"></span>
+                        <span>円</span>
+                    </div>
+                    <div>
+                        <span>送料合計：</span>
+                        <span id="postageTotal"></span>
+                        <span>円</span>
+                    </div>
+                </div>
+                <!-- カート内金額表示エリア end -->
+                <p>&nbsp;</p>
+                <!-- カート内商品表示エリア start -->
+                <table class="table table-bordered table-hover" id="cartTable">
+                    <tr>
+                        <th scope="col" id="num" style="width:10%">#</th>
+                        <th scope="col" id="fruitsName" style="width:45%">商品名</th>
+                        <th scope="col" id="fruitsCount" style="width:15%">購入数</th>
+                        <th scope="col" id="price" style="width:15%">価格</th>
+                        <th scope="col" id="postage" style="width:15%">送料</th>
+                    </tr>
+                </table>
+                <!-- カート内商品表示エリア end -->
+                <p>&nbsp;</p>
+                <div class="text-center">
+                    <button class="btn btn-primary" onclick="checkShopping()"> 商品購入へ </button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="text-center">
+        <p>&nbsp;</p>
+        <p class="mt-5 mb-3 text-muted">&copy; 2022 株式会社SCREEN</p>
+        <p>&nbsp;</p>
+    </footer>
+</body>
+</html>

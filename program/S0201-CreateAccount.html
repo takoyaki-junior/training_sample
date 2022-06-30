@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <script defer src="./js/S0201-CreateAccount.js"></script>
+    <title>SCREEN 研修アプリケーション</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar bg-light fixed-top border">
+            <span class="navbar-brand mb-0 h1">&nbsp;研修アプリ アカウント作成&nbsp;</span>
+        </nav>
+    </header>
+    <main>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <div class="card mx-auto" style="width:30rem;">
+            <div class="card-body">
+                <form class="form-input" onsubmit="return inputCheck();" method="post">
+                    <p>&nbsp;</p>
+                    <h3 class="h3 mb-3 text-center">アカウント情報入力</h3>
+                    <p>&nbsp;</p>
+                    <!-- 入力エリア start -->
+                    <div class="container">
+                        <label for="userId">ユーザーID</label>
+                        <input type="text" id="userId" class="form-control" placeholder="ユーザーID" required> <br>
+                        <label for="password">パスワード</label>
+                        <input type="password" id="password" class="form-control" placeholder="パスワード" required> <br>
+                        <label for="email">メールアドレス</label>
+                        <input type="email" id="email" class="form-control" placeholder="メールアドレス" required> <br>
+                        <label for="lastName">姓</label>
+                        <input type="text" id="lastName" class="form-control" placeholder="姓"> <br>
+                        <label for="firstName">名</label>
+                        <input type="text" id="firstName" class="form-control" placeholder="名"> <br>
+                        <label for="lastNameKn">姓(カナ)</label>
+                        <input type="text" id="lastNameKn" class="form-control" placeholder="姓(カナ)"> <br>
+                        <label for="firstNameKn">名(カナ)</label>
+                        <input type="text" id="firstNameKn" class="form-control" placeholder="名(カナ)"> <br>
+                        <label for="userId">郵便番号</label>
+                        <div class="row" id="postCode">
+                            <div class="col-3">
+                                <input type="text" id="postCode1" class="form-control">
+                            </div>
+                            &nbsp;―&nbsp;
+                            <div class="col-3">
+                                <input type="text" id="postCode2" class="form-control">
+                            </div>
+                        </div> <br>
+                        <label for="address1">住所1(都道府県)</label>
+                        <input type="text" id="address1" class="form-control" placeholder="都道府県"> <br>
+                        <label for="address2">住所2(市区町村)</label>
+                        <input type="text" id="address2" class="form-control" placeholder="市区町村"> <br>
+                        <label for="address3">住所3(地名・番地)</label>
+                        <input type="text" id="address3" class="form-control" placeholder="地名・番地"> <br>
+                        <label for="address4">住所4(マンション名)</label>
+                        <input type="text" id="address4" class="form-control" placeholder="マンション名"> <br>
+                        <p>&nbsp;</p>
+                        <div class="text-center">
+                            <button class="btn btn-primary" type="submit" formaction="./S0202-CheckAccount.html">　登録　</button>
+                        </div>
+                    </div>
+                    <!-- 入力エリア end -->
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="text-center">
+        <p>&nbsp;</p>
+        <p class="mt-5 mb-3 text-muted">&copy; 2022 株式会社SCREEN</p>
+        <p>&nbsp;</p>
+    </footer>
+</body>
+</html>

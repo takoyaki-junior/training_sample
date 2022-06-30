@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <script defer src="./js/S0801-ViewAccount.js"></script>
+    <title>SCREEN 研修アプリケーション</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar bg-light fixed-top border">
+            <span class="navbar-brand mb-0 h1">&nbsp;研修アプリ アカウント情報確認&nbsp;</span>
+        </nav>
+    </header>
+    <main>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <div class="card mx-auto" style="width:40rem;">
+            <div class="card-body">
+                <p>&nbsp;</p>
+                <h3 class="h3 mb-3 text-center">アカウント情報確認</h3>
+                <p>&nbsp;</p>
+                <!-- アカウント情報表示エリア start -->
+                <div class="container">
+                    <div>ユーザーID</div>
+                    <div id="userId"></div> <br>
+                    <div>メールアドレス</div>
+                    <div id="email"></div> <br>
+                    <div>姓</div>
+                    <div id="lastName"></div> <br>
+                    <div>名</div>
+                    <div id="firstName"></div> <br>
+                    <div>姓(カナ)</div>
+                    <div id="lastNameKn"></div> <br>
+                    <div>名(カナ)</div>
+                    <div id="firstNameKn"></div> <br>
+                    <div>郵便番号</div>
+                    <div id="postCode"></div> <br>
+                    <div>住所1(都道府県)</div>
+                    <div id="address1"></div> <br>
+                    <div>住所2(市区町村)</div>
+                    <div id="address2"></div> <br>
+                    <div>住所3(地名・番地)</div>
+                    <div id="address3"></div> <br>
+                    <div>住所4(マンション名)</div>
+                    <div id="address4"></div>
+                </div>
+                <!-- アカウント情報表示エリア end -->
+                <p>&nbsp;</p>
+                <div class="text-center">
+                    <a class="btn btn-primary" role="button" href="./S0802-ChangeAccount.html">アカウント情報編集へ</a>
+                </div>
+                <p>&nbsp;</p>
+            </div>
+        </div>
+    </main>
+    <footer class="text-center">
+        <p>&nbsp;</p>
+        <p class="mt-5 mb-3 text-muted">&copy; 2022 株式会社SCREEN</p>
+        <p>&nbsp;</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <script defer src="./js/S0501-FruitsList.js"></script>
+    <title>SCREEN 研修アプリケーション</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar bg-light fixed-top border">
+            <span class="navbar-brand mb-0 h1">&nbsp;研修アプリ 商品一覧&nbsp;</span>
+        </nav>
+    </header>
+    <main>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <!-- 検索エリア start -->
+        <div class="container">
+            <div class="form">
+                <div class="row text-center">
+                    <div class="col-2 ">
+                        <select class="form-control" id="selectFruitsGroup">
+                            <option value="">商品分類：全て</option>
+                            <option value="柑橘類">柑橘類</option>
+                            <option value="仁果類">仁果類</option>
+                            <option value="核果類">核果類</option>
+                            <option value="果菜類">果菜類</option>
+                            <option value="その他">その他</option>
+                        </select>
+                    </div>
+                    <div class="col-2">
+                        <select class="form-control" id="selectOrigin">
+                            <option value="">原産国：全て</option>
+                            <option value="イタリア">イタリア</option>
+                            <option value="フランス">フランス</option>
+                            <option value="ドイツ">ドイツ</option>
+                            <option value="イギリス">イギリス</option>
+                            <option value="スペイン">スペイン</option>
+                            <option value="ロシア">ロシア</option>
+                            <option value="ポーランド">ポーランド</option>
+                            <option value="ギリシャ">ギリシャ</option>
+                        </select>
+                    </div>
+                    <div class="col-6">
+                        <input class="form-control" type="text" id="inputFruitsName" placeholder="商品名">
+                    </div>
+                    <div class="col-2 text-center">
+                        <button class="btn btn-primary btn-md" onclick="searchFruits()">　　検索　　</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 検索エリア end -->
+        <p>&nbsp;</p>
+        <!-- 商品一覧表示エリア start -->
+        <div class="container">
+            <table class="table table-bordered table-hover" id="fruitsTable">
+                <tr>
+                    <th scope="col" id="num" style="width:5%">#</th>
+                    <th scope="col" id="fruitsName" style="width:40%">商品名</th>
+                    <th scope="col" id="fruitsGroup" style="width:15%">商品分類</th>
+                    <th scope="col" id="origin" style="width:15%">原産国</th>
+                    <th scope="col" id="price" style="width:15%">価格</th>
+                    <th scope="col" id="detail" style="width:10%">商品詳細</th>
+                </tr>
+            </table>
+        </div>
+        <!-- 商品一覧表示エリア end -->
+    </main>
+    <footer class="text-center">
+        <p>&nbsp;</p>
+        <p class="mt-5 mb-3 text-muted">&copy; 2022 株式会社SCREEN</p>
+        <p>&nbsp;</p>
+    </footer>
+</body>
+</html>
