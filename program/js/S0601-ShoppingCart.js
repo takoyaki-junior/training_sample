@@ -6,7 +6,7 @@ window.onload = function () {
     try {
         // ログインユーザー情報を取得
         const sessionLoginUser = sessionStorage.getItem("session_login_user_object");
-        // 買い物情報を取得
+        // 買い物かご情報を取得
         let localCartObject = [];
         if (localStorage.getItem("local_cart_object")) {
             localCartObject = JSON.parse(localStorage.getItem("local_cart_object"));
@@ -35,10 +35,11 @@ window.onload = function () {
         }
         // 合計金額を計算
         total += fruitsTotal + postageTotal;
-        // 各金額情報を表示
+        // 各金額情報エリアを取得
         const totalArea = document.getElementById("total");
         const fruitsTotalArea = document.getElementById("fruitsTotal");
         const postageTotalArea = document.getElementById("postageTotal");
+        // 各金額情報を表示
         totalArea.innerHTML = total;
         fruitsTotalArea.innerHTML = fruitsTotal;
         postageTotalArea.innerHTML = postageTotal;

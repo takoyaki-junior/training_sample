@@ -61,10 +61,7 @@ function purchase() {
         // 購入情報の取得
         const sessionShoppingInfo = JSON.parse(sessionStorage.getItem("session_shopping_info_object"));
         // 現在の購入履歴を取得
-        let localShoppingHistory = [];
-        if (localStorage.getItem("local_shopping_history_object")) {
-            localShoppingHistory = JSON.parse(localStorage.getItem("local_shopping_history_object"));
-        }
+        const localShoppingHistory = JSON.parse(localStorage.getItem("local_shopping_history_object"));
         // 画面入力情報の取得
         const selectPayment = document.getElementById("selectPayment").innerHTML;
         const deliveryName = document.getElementById("deliveryName").innerHTML;

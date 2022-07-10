@@ -11,7 +11,7 @@ window.onload = function () {
             // 表示対象の行を取得
             const fruitsTable = document.getElementById("fruitsTable");
             const row = fruitsTable.insertRow(-1);
-            // 対象商品を画面へ表示する
+            // 対象の商品情報を画面へ表示する
             row.insertCell(-1).innerHTML = i + 1;
             row.insertCell(-1).innerHTML = localFruitsObject[i].fruitsName;
             row.insertCell(-1).innerHTML = localFruitsObject[i].fruitsGroup;
@@ -49,6 +49,7 @@ function searchFruits() {
                     searchFruitsData.push(targetFruits[i]);
                 }
             }
+            // 取得した商品を設定
             targetFruits = searchFruitsData;
         }
         // 原産国が選択されている場合
@@ -62,6 +63,7 @@ function searchFruits() {
                     searchFruitsData.push(targetFruits[i]);
                 }
             }
+            // 取得した商品を設定
             targetFruits = searchFruitsData;
         }
         // 商品名が入力されている場合
@@ -74,6 +76,7 @@ function searchFruits() {
                     searchFruitsData.push(targetFruits[i]);
                 }
             }
+            // 取得した商品を設定
             targetFruits = searchFruitsData;
         }
         // 現在の商品一覧件数を取得する
@@ -82,6 +85,7 @@ function searchFruits() {
         // 現在の商品一覧を削除する
         if (rowNum > 0) {
             for (let i = 0; i < rowNum; i++) {
+                // 件数分、1行ずつ削除する
                 nowFruitsTable.deleteRow(-1);
             }
         }

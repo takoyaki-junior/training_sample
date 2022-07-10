@@ -4,7 +4,7 @@
  */
 function inputCheck() {
     try {
-        // 入力項目を取得
+        // 画面入力項目を取得
         const inputUserId = document.getElementById("userId").value;
         const inputPassword = document.getElementById("password").value;
         const inputEmail = document.getElementById("email").value;

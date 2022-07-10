@@ -19,7 +19,7 @@ function changePassword() {
             if (localUserObject[i].userId === inputUserId) {
                 // 存在するIDの場合、現在のパスワードが正しいか確認
                 if (localUserObject[i].password === inputOldPassword) {
-                    // 現在のパスワードが正しい場合、反復処理を抜ける
+                    // 現在のパスワードが正しい場合、チェック用変数を更新し、反復処理を抜ける
                     checkFlg = true;
                     userCount = i;
                     break;

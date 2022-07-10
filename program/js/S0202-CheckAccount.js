@@ -3,22 +3,22 @@
  */
 window.onload = function () {
     try {
-        // セッションから入力したユーザー情報を取得
+        // セッションから前画面にて入力したユーザー情報を取得
         const sessionInputUser = JSON.parse(sessionStorage.getItem("session_input_user_object"));
         // 画面オブジェクトを取得
-        let userIdArea = document.getElementById("userId");
-        let passwordArea = document.getElementById("password");
-        let emailArea = document.getElementById("email");
-        let lastNameArea = document.getElementById("lastName");
-        let firstNameArea = document.getElementById("firstName");
-        let lastNameKnArea = document.getElementById("lastNameKn");
-        let firstNameKnArea = document.getElementById("firstNameKn");
-        let postCodeArea = document.getElementById("postCode");
-        let address1Area = document.getElementById("address1");
-        let address2Area = document.getElementById("address2");
-        let address3Area = document.getElementById("address3");
-        let address4Area = document.getElementById("address4");
-        // 画面へ入力したユーザー情報を表示する
+        const userIdArea = document.getElementById("userId");
+        const passwordArea = document.getElementById("password");
+        const emailArea = document.getElementById("email");
+        const lastNameArea = document.getElementById("lastName");
+        const firstNameArea = document.getElementById("firstName");
+        const lastNameKnArea = document.getElementById("lastNameKn");
+        const firstNameKnArea = document.getElementById("firstNameKn");
+        const postCodeArea = document.getElementById("postCode");
+        const address1Area = document.getElementById("address1");
+        const address2Area = document.getElementById("address2");
+        const address3Area = document.getElementById("address3");
+        const address4Area = document.getElementById("address4");
+        // 画面へ前画面にて入力したユーザー情報を表示
         userIdArea.innerHTML = sessionInputUser.userId;
         passwordArea.innerHTML = sessionInputUser.password;
         emailArea.innerHTML = sessionInputUser.email;
@@ -26,7 +26,7 @@ window.onload = function () {
         firstNameArea.innerHTML = sessionInputUser.firstName;
         lastNameKnArea.innerHTML = sessionInputUser.lastNameKn;
         firstNameKnArea.innerHTML = sessionInputUser.firstNameKn;
-        postCodeArea.innerHTML = sessionInputUser.postCode1 + "ー" + sessionInputUser.postCode2;
+        postCodeArea.innerHTML = sessionInputUser.postCode1 + "ー" + sessionInputUser.postCode2; // 郵便番号は結合し表示
         address1Area.innerHTML = sessionInputUser.address1;
         address2Area.innerHTML = sessionInputUser.address2;
         address3Area.innerHTML = sessionInputUser.address3;

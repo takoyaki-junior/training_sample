@@ -39,6 +39,96 @@ window.onload = function () {
         }];
         localStorage.setItem("local_user_object", JSON.stringify(initUserData));
     }
+    // 初期購入履歴登録
+    if (!localStorage.getItem("local_shopping_history_object")) {
+        let initShoppingData = [{
+            userId: "screen",
+            shoppingNo: "S2076",
+            shoppingDate: "2022/6/27",
+            userName: "株式会社SCREEN",
+            userNameKn: "カブシキガイシャスクリーン",
+            userEmail: "screen2019.inc@gmail.com",
+            address: "愛知県安城市朝日町17-17",
+            postCode: "446ー0031",
+            total: "30700",
+            fruitsTotal: "24500",
+            postageTotal: "6200",
+            payment: "",
+            deliveryAddress: "愛知県安城市朝日町17-17",
+            deliveryName: "株式会社SCREEN",
+            deliveryNameKn: "カブシキガイシャスクリーン",
+            deliveryPostCode: "446ー0031",
+            cartInfo: [{
+                userId: "screen",
+                fruitsCode: "0003",
+                fruitsName: "スパイシーレモン",
+                price: "3500",
+                postage: "1800",
+                fruitsCount: "3"
+                }, {
+                userId: "screen",
+                fruitsCode: "0007",
+                fruitsName: "毒リンゴ",
+                price: "2000",
+                postage: "1000",
+                fruitsCount: "1"
+                }, {
+                userId: "screen",
+                fruitsCode: "0012",
+                fruitsName: "ベリベリホットチェリー",
+                price: "2400",
+                postage: "3400",
+                fruitsCount: "5"
+                }]
+        }, {
+            userId: "screen",
+            shoppingNo: "S2077",
+            shoppingDate: "2022/7/1",
+            userName: "株式会社SCREEN",
+            userNameKn: "カブシキガイシャスクリーン",
+            userEmail: "screen2019.inc@gmail.com",
+            address: "愛知県安城市朝日町17-17",
+            postCode: "446ー0031",
+            total: "59000",
+            fruitsTotal: "51600",
+            postageTotal: "7400",
+            payment: "",
+            deliveryAddress: "愛知県安城市朝日町17-17",
+            deliveryName: "株式会社SCREEN",
+            deliveryNameKn: "カブシキガイシャスクリーン",
+            deliveryPostCode: "446ー0031",
+            cartInfo: [{
+                userId: "screen",
+                fruitsCode: "0008",
+                fruitsName: "フリーダム・アップル",
+                price: "7200",
+                postage: "2500",
+                fruitsCount: "5"
+                }, {
+                userId: "screen",
+                fruitsCode: "0016",
+                fruitsName: "飲んだくれ杏",
+                price: "4600",
+                postage: "1400",
+                fruitsCount: "2"
+                }, {
+                userId: "screen",
+                fruitsCode: "0020",
+                fruitsName: "ミス・メロン",
+                price: "6000",
+                postage: "2500",
+                fruitsCount: "1"
+                }, {
+                userId: "screen",
+                fruitsCode: "0017",
+                fruitsName: "災い苺",
+                price: "400",
+                postage: "1000",
+                fruitsCount: "1"
+                }]
+        }];
+        localStorage.setItem("local_shopping_history_object", JSON.stringify(initShoppingData));
+    }
     // 商品データ登録
     if (!localStorage.getItem("local_fruits_object")) {
         let initFruitsData = [{
@@ -274,7 +364,7 @@ window.onload = function () {
         }, {
             fruitsCode: "0024",
             fruitsGroup: "その他",
-            fruitsName: "ラズベリー（おかず用）",
+            fruitsName: "ラズベリー（ごはんのおとも）",
             origin: "ポーランド",
             quantity: "20",
             price: "800",
